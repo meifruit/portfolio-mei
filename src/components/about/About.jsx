@@ -47,7 +47,6 @@ const About = () => {
                     <div className="about__skillImageContainer">
                       <i className={skill.imageSrc}></i>
                     </div>
-                    {/* <p>{skill.title}</p> */}
                   </div>
                 );
               })}

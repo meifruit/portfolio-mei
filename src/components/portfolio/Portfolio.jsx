@@ -48,11 +48,7 @@ const Portfolio = () => {
                 <p className="description">{description}</p>
                 <ul className="skills">
                   {skills.map((skill, id) => {
-                    return (
-                      <li key={id} className="skill">
-                        {skill}
-                      </li>
-                    );
+                    return <i key={id} className={`devicon-${skill}`}></i>;
                   })}
                 </ul>
                 <div className="links">

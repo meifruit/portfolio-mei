@@ -1,29 +1,3 @@
-.work__filters {
-  display: flex;
-  align-items: center;
-  column-gap: 1.875rem;
-  margin-bottom: 2.5rem;
-}
-/* .work__item {
-  cursor: pointer;
-  font-weight: var(--font-bold);
-  transition: 0.3s;
-}
-.work__item:hover {
-  color: var(--first-color);
-} */
-.work__container {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.875rem;
-}
-
-.work__card {
-  position: relative;
-  overflow: hidden;
-  border: 3px solid #ffff3f;
-  border-radius: 5px;
-  box-shadow: var(--shadow);
-}
 /*
 .work__mask {
   background: #6c6ce5;
@@ -91,7 +65,42 @@
   opacity: 1;
   transform: translateY(0);
 } */
+.work__filters {
+  display: flex;
+  align-items: center;
+  column-gap: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+.work__item {
+  cursor: pointer;
+  font-weight: var(--font-bold);
+  transition: 0.3s;
+}
+.work__item:hover {
+  color: #ffff3f;
+}
+.work__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
 
+  /* For iPad-sized screens, display 2 cards per row */
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr; /* For small screens, 1 column (stacked) */
+  }
+}
+
+.work__card {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #ffff3f;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
 .skills {
   width: 100%;
   margin-top: 14px;
@@ -139,4 +148,13 @@
 }
 .work__thumbnail {
   padding-left: 10px;
+}
+.skills i {
+  font-size: 24px; /* Adjust the icon size for responsiveness */
+  @media screen and (max-width: 768px) {
+    font-size: 20px; /* Decrease the icon size for medium-sized screens */
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 16px; /* Further decrease the icon size for small screens */
+  }
 }

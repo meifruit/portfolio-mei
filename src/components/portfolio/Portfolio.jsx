@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./portfolio.css";
+import styles from "./portfolio.css";
 import Menu from "./Menu";
+import { getImageUrl } from "../../index.js";
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
   const filterItem = (categoryItem) => {
@@ -20,29 +21,49 @@ const Portfolio = () => {
           Groupwork
         </span>
         <span className="work__item" onClick={() => filterItem("Personalwork")}>
-          PersonalWork
-        </span>
-        <span className="work__item" onClick={() => filterItem("Design")}>
-          Design
-        </span>
-        <span className="work__item" onClick={() => filterItem("Ecsite")}>
-          ECsite
+          Personalwork
         </span>
       </div>
       <div className="work__container grid">
         {items.map((elem) => {
-          const { id, image, title, category } = elem;
+          const {
+            id,
+            image,
+            title,
+            category,
+            description,
+            skills,
+            demo,
+            source,
+          } = elem;
           return (
             <div className="work__card" key={id}>
+              <img
+                src={image}
+                alt={`Image of ${title}`}
+                className="work__img"
+              />
               <div className="work__thumbnail">
-                <img src={image} alt="" className="work__img" />
-                <div className="work__mask"></div>
+                <h2 className="title">{title}</h2>
+                <p className="description">{description}</p>
+                <ul className="skills">
+                  {skills.map((skill, id) => {
+                    return (
+                      <li key={id} className="skill">
+                        {skill}
+                      </li>
+                    );
+                  })}
+                </ul>
+                <div className="links">
+                  <a href={demo} className="link">
+                    Demo
+                  </a>
+                  <a href={source} className="link">
+                    Github
+                  </a>
+                </div>
               </div>
-              <span className="work__category">{category}</span>
-              <h2 className="work__title">{title}</h2>
-              <a href="#" className="work__button">
-                <i className="icon-link work__butoon-icon"></i>
-              </a>
             </div>
           );
         })}

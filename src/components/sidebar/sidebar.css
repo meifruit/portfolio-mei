@@ -2,7 +2,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  background: var(--body-color);
+  background: var(--color-secondary);
   border-right: 1px solid rgba(0, 0, 0, 0.05);
   padding: 2.5rem;
   width: 110px;
@@ -21,7 +21,7 @@
 
 .nav__link {
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: #ffff3f;
   font-weight: var(--font-bold);
 }
 
@@ -33,4 +33,24 @@
   font-size: var(--small-font-size);
   transform: rotate(-180deg);
   writing-mode: vertical-rl;
+}
+
+.nav__toggle {
+  position: fixed;
+  top: 1.25rem;
+  left: 1.875rem;
+  cursor: pointer;
+  height: 40px;
+  width: 45px;
+  background-color: var(--color-primary);
+  border: 1px solid #776b7c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+  .aside {
+    left: -110px;
+  }
 }

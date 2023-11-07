@@ -10,6 +10,11 @@
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(258, 60%, 98%);
   --container-color: #fff;
+  --color-text: #c9c8c8;
+  --color-primary: #576cbc;
+  --color-secondary: #19376d;
+  --color-dark: #0b2447;
+  --color-bg: #04152d;
 
   /* Font and Typography */
   /* .5rem = 8px | 1rem = 16px ...*/
@@ -60,14 +65,14 @@ textarea {
   font-size: var(--normal-font-size);
 }
 body {
-  background-color: var(--body-color);
+  background-color: var(--color-bg);
   line-height: 1.7;
-  color: var(--text-color);
+  color: var(--color-text);
 }
 h1,
 h2,
 h3 {
-  color: var(--title-color);
+  color: var(--color-text);
   font-weight: var(--font-semibold);
   line-height: 1.2;
 }

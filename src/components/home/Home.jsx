@@ -11,9 +11,9 @@ const Home = () => {
         <h1 className="home__name">Xuemei Huang</h1>
         <span className="home__education">I'm a Front-End developer</span>
         <HeaderSocials />
-        <a href="#contact" className="btn">
+        {/* <a href="#contact" className="btn">
           Contact Me
-        </a>
+        </a> */}
         <ScrollDown />
       </div>
     </section>

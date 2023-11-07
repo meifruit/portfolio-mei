@@ -17,13 +17,13 @@ const App = () => {
       <main className="main">
         <Home />
         <About />
-        <Services />
-        <Resume />
+        {/* <Services /> */}
+        {/* <Resume /> */}
         <Portfolio />
-        <Pricing />
+        {/* <Pricing />
         <Testimonials />
-        <Blog />
-        <Contect />
+        <Blog /> */}
+        {/* <Contect /> */}
       </main>
     </>
   );

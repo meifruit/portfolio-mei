@@ -11,8 +11,8 @@ const Portfolio = () => {
     setItems(updatedItems);
   };
   return (
-    <section className="work container section" id="work">
-      <h2 className="section__title">Project</h2>
+    <section className="portfolio container section" id="portfolio">
+      <h2 className="about__title">Project</h2>
       <div className="work__filters">
         <span className="work__item" onClick={() => setItems(Menu)}>
           Everything
@@ -52,9 +52,11 @@ const Portfolio = () => {
                   })}
                 </ul>
                 <div className="links">
-                  <a href={demo} className="link">
-                    Demo
-                  </a>
+                  {demo && (
+                    <a href={demo} className="link">
+                      Demo
+                    </a>
+                  )}
                   <a href={source} className="link">
                     Github
                   </a>

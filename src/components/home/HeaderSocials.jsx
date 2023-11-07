@@ -19,7 +19,11 @@ const HeaderSocials = () => {
         <i class="fa-brands fa-github"></i>
       </a>
 
-      <a href="" className="home__social-link" target="_blank">
+      <a
+        href="mailto:xuemei.js@gmail.com"
+        className="home__social-link"
+        target="_blank"
+      >
         <i class="fa-solid fa-envelope"></i>
       </a>
     </div>

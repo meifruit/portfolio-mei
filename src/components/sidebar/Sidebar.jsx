@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./sidebar.css";
 import Logo from "../../assets/logo.svg";
 const Sidebar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
   return (
     <>
       <aside className="aside">
@@ -19,13 +24,13 @@ const Sidebar = () => {
 
               <li className="nav__item">
                 <a href="#about" className="nav__link">
-                  <i className="icon-user-following"></i>
+                  <i className="icon-mustache"></i>
                 </a>
               </li>
 
               <li className="nav__item">
                 <a href="#portfolio" className="nav__link">
-                  <i className="icon-layers"></i>
+                  <i className="icon-emotsmile"></i>
                 </a>
               </li>
             </ul>
@@ -36,9 +41,9 @@ const Sidebar = () => {
         </div>
       </aside>
 
-      <div className="nav__toggle">
+      {/* <div className="nav__toggle">
         <i className="icon-menu"></i>
-      </div>
+      </div> */}
     </>
   );
 };

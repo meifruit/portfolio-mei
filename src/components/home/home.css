@@ -45,12 +45,13 @@
   margin: 1.5rem 0;
 }
 .home__social-link {
-  color: var(--title-color);
+  color: var(--text-color);
   font-size: 1.3rem;
   transition: 0.3s;
 }
 .home__social-link:hover {
-  color: hsl(43, 100%, 68%);
+  /* color: hsl(43, 100%, 68%); */
+  color: #ffff3f;
 }
 .sroll__down {
   position: absolute;
@@ -59,7 +60,7 @@
   width: 100%;
 }
 .home__scroll {
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   color: var(--color-primary);
 }
 .mouse {

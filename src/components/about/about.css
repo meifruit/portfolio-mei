@@ -52,7 +52,7 @@
   position: relative;
 } */
 .about__info {
-  margin-top: 10px;
+  margin-top: 1rem;
   padding: 1.5rem;
   background-color: var(--color-secondary);
   box-shadow: var(--shadow);
@@ -76,7 +76,7 @@
 
 .about__title {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
@@ -104,7 +104,7 @@
 }
 
 .about__skillImageContainer {
-  margin-top: 10px;
+  margin-top: 1rem;
   background-color: var(--color-secondary);
   border-radius: 10%;
   display: flex;

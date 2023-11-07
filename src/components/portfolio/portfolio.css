@@ -70,6 +70,7 @@
   align-items: center;
   column-gap: 1.875rem;
   margin-bottom: 2.5rem;
+  margin-top: 1rem;
 }
 .work__item {
   cursor: pointer;
@@ -100,6 +101,13 @@
   border: 3px solid #ffff3f;
   border-radius: 5px;
   box-shadow: var(--shadow);
+  height: 420px;
+  width: 340px;
+}
+.work__img {
+  width: 100%;
+  height: 50%; /* Make the image cover the entire work__card */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
 }
 .skills {
   width: 100%;
@@ -139,6 +147,7 @@
 .title {
   font-size: 20px;
   /* font-weight: 400; */
+  padding-top: 5px;
 }
 
 .description {
